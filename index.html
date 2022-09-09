@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
 <header>
-  
   <h1>Reliable, efficient delivery</h1>
   <h2>Powered by Technology</h2>
   <p class="principal">
@@ -27,24 +23,30 @@
 
   <div class="cards_container">
    
-    <div class="card1">
-      Supervisor
-      Monitors activity to identify project roadblocks
+    <div class="card card1">
+      <p class="tittlecard">Supervisor</p>
+      <h2 class="description">Monitors activity to identify project roadblocks</h2>
+      <img class="logo"  src="./images/icon-supervisor.svg" alt="lupa">
     </div>
     
-    <div class="card2">
-      Team Builder
-      Scans our talent network to create the optimal team for your project
+    <div class="card card2">
+      <p class="tittlecard"> Team Builder</p>
+      <h2 class="description">Scans our talent network to create the optimal team for your project</h2>
+      <img class="logo"  src="./images/icon-team-builder.svg" alt="casita">
+      
     </div>
 
-    <div class="card3">
-      Karma
-      Regularly evaluates our talent to ensure quality
+    <div class="card card3">
+      <p class="tittlecard">Karma</p>
+      <h2 class="description">Regularly evaluates our talent to ensure quality</h2> 
+      <img class="logo"  src="./images/icon-karma.svg" alt="foco">
     </div>
 
-    <div class="card4">
-      Calculator
-      Uses data from past projects to provide better delivery estimates
+    <div class="card card4">
+      <p class="tittlecard">Calculator</p>
+       <h2 class="description"> Uses data from past projects to provide better delivery estimates</h2>
+       <img class="logo" src="./images/icon-calculator.svg" alt="">
+     
     </div>
     
   </div>
@@ -53,7 +55,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Ottoniel Castañeda</a>.
     </p>
   </footer>
 </body>
