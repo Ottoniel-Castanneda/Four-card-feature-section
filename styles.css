@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 :root {
-    --bitcoin-orange: #f7931A;
     --Red: hsl(0, 78%, 62%);
     --Cyan: hsl(180, 62%, 55%);
     --Orange: hsl(34, 97%, 64%);
@@ -60,7 +59,7 @@ h2 {
 }
 
 .card1  {
-    box-shadow: 0 5px 20px 0 var(--Grayish-Blue);
+    box-shadow: 0px 15px 20px 0 var(--Grayish-Blue);
     display: flex;
     flex-direction: column;
     border-top: 3px solid var(--Cyan);
@@ -68,7 +67,8 @@ h2 {
     width: 300px;
     height: 200px;
 }.card2 {
-    box-shadow: 0 5px 20px 0 var(--Grayish-Blue);
+    box-shadow: 0px 15px 20px 0
+    var(--Grayish-Blue);
     display: flex;
     flex-direction: column;
     border-top: 3px solid var(--Red);
@@ -77,7 +77,8 @@ h2 {
     height: 200px;
 }
 .card3 {
-    box-shadow: 0 5px 20px 0 var(--Grayish-Blue);
+    box-shadow: 0px 15px 20px 0
+    var(--Grayish-Blue);
     display: flex;
     display: flex;
     flex-direction: column;
@@ -87,7 +88,8 @@ h2 {
     height: 200px;
 }
 .card4 {
-    box-shadow: 0 5px 20px 0 var(--Grayish-Blue);
+    box-shadow: 0px 15px 20px 0
+    var(--Grayish-Blue);
     display: flex;
     display: flex;
     flex-direction: column;
@@ -139,3 +141,96 @@ h2 {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 500px){
+header {
+    width: 500px;
+    }
+h1, h2 {
+    font-size: 2.9rem;
+}
+.principal {
+    padding: 0 5px;
+}
+.cards_container {
+    width: 500px;
+}
+.card {
+    width: 450px;
+}
+}
+@media (min-width: 768px){
+.cards_container{
+        width: 750px;
+        height: 455px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+}
+
+header {
+    margin-top: 90px;
+    width: 670px;
+}
+.principal {
+    margin-bottom: 0px;
+}    
+.card {
+    width: 320px;
+    margin-left: 28px;
+}    
+.card1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.card2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.card3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.card4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+}
+@media (min-width: 1100px) {
+.cards_container{
+        width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-template-areas: 
+        ". area-centro ."
+        "izq area-centro der"
+        ". area-centro ."
+}       
+
+header {
+    margin-top: 30px;
+    width: 670px;
+}
+.principal {
+    margin: 20px 0;
+}    
+.card {
+    width: 320px;
+    margin-left: 15px;
+}   
+.card1 {
+    grid-area: izq;
+} 
+.card2, .card3 {
+    grid-area: area-centro;
+}
+.card2 {
+    align-self: flex-start;
+}
+.card3 {
+    align-self: flex-end;
+}
+.card4 {
+    grid-area: der;
+}
+}
