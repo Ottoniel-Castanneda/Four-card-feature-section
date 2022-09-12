@@ -38,6 +38,7 @@ header {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 20px 0 30px 0;
+
 }
 h1 {
     color: var(--Very-Dark-Blue);
@@ -174,7 +175,9 @@ header {
     width: 670px;
 }
 .principal {
-    margin-bottom: 0px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 1.4rem;
 }    
 .card {
     width: 320px;
@@ -210,11 +213,13 @@ header {
 }       
 
 header {
-    margin-top: 30px;
+    margin-top: 90px;
     width: 670px;
 }
 .principal {
-    margin: 20px 0;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 1.4rem;
 }    
 .card {
     width: 320px;
